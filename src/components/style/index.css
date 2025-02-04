@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+/* Styling for the UL */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center; /* Ensures list items are vertically centered */
+    gap: 20px;
+}
+
+/* Styling for List Items */
+nav ul li {
+    display: flex;
+    align-items: center; /* Ensures the text inside the list items is vertically centered */
+}
+
+
+/* Links inside list items */
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    color: crimson !important;
+}
+
+/* Theme switcher section */
+.d-flex {
+    display: flex;
+    align-items: center; /* Centers checkbox and label vertically */
+    gap: 10px;
+}
+
+/* Checkbox size */
+#themeButton {
+    width: 20px;
+    height: 20px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Apply theme to parent itself */
+.dark-theme {
+    background-color: #1e272e !important;
+    color: white !important;
+}
+
+/* Apply theme to immediate children */
+.dark-theme > * {
+    background-color: inherit !important; /* Inherit from parent */
+    color: inherit !important;
+}
+
+/* Light theme applied only to parent */
+.light-theme {
+    background-color: #ffffff !important;
+    color: #1e272e !important;
+}
+
+/* Light theme applied only to immediate children */
+.light-theme > * {
+    background-color: inherit !important; /* Inherit from parent */
+    color: inherit !important;
+}
+
+/* 🚀 Prevent Bootstrap buttons from losing their default styles */
+.dark-theme .btn {
+    background-color: var(--bs-primary) !important; /* Bootstrap primary color */
+    color: white !important;
+}
+
+.keep-light{
+    background-color: #ffffff !important;
+    color: #1e272e !important;
+}
