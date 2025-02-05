@@ -3,11 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './components/App';
 import { ThemeProvider } from './context/ThemeContext';
 import './components/style/index.css';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ThemeProvider>
-      <App/>
-  </ThemeProvider>
+  <Provider store={store}> 
+    <ThemeProvider>         
+      <App />
+    </ThemeProvider>
+  </Provider>
 );

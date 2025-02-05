@@ -26,7 +26,6 @@ const NavBar = () => {
             setTheme(theme);
             setThemeText(themeText);
         }
-        console.log("theme")
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme]);
 

@@ -1,14 +1,14 @@
 import NavBar from "./NavBar";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
+import ReduxTodoList from "./ReduxTodoList";
 import { TodoProvider } from "../context/TodoContext";
+import ReduxTodoForm from "./ReduxTodoForm";
 
-const App = () => {
+const App = () => {    
     return <>
         <NavBar />
         <TodoProvider>
-            <TodoForm />
-            <TodoList />
+            <ReduxTodoForm />
+            <ReduxTodoList/>
         </TodoProvider>
     </>
 }
